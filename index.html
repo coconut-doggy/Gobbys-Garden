@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Gobby's Garden</title>
+  <script src="hehe.js"></script>
   <style>
       body{
         margin:0;
@@ -18,17 +19,6 @@
 <body>
   <h1>Order form</h1>
   <script>
-
-      function getRandomInt(max) {
-            return math.floor(math.random() * max);
-      }
-      function lol(){
-        i=getRandomInt(4);
-        songs=["AntonioVivaldi_Spring.mp3", "05 Edvard Grieg - Peer Gynt, Morning Mood, 1875.mp3", "Classic Easter- Axs Music (2).mp3", "05. Franz Joseph Haydn - Trumpet Concerto.mp3"];
-        songP = songs[i];
-
-        return(songP);
-       }
         function play(){
         document.body.innerHTML= "<audio autoplay><source src=" + lol + ' type="audio/mp3"></audio>;
       }

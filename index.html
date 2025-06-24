@@ -28,15 +28,14 @@
   <img src="Screenshot_2025-06-24_154539-removebg-preview.png" id="slime" alt="Stamp of approval"> 
   <img src="sugar sticker.png" id="foot" alt="produce sticker">
   <script>
-    /*
-    function play() {
-      song = lol();
-      console.log(song);
-      document.getElementById("music").innerHTML = '<audio autoplay><source src="' + song + '" type="audio/mp3"></audio>';
+   // Add an event listener for the 'keydown' event
+document.addEventListener('keydown', function(event) {
+    // Check if the specific key is pressed (e.g., 'Enter' key)
+    if (event.key === 'Enter') {
+        // Call your function
+        play_song();
     }
-    play();
-    */
-   play_song();
+});
   </script>
 </body>
 

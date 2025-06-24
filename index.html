@@ -1,28 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <title>Gobby's Garden</title>
   <script src="hehe.js"></script>
   <style>
-      body{
-        margin:0;
-        background-color: #f0ebf8;
-      }
-      #foot{
-        transform: rotate(25deg)
-      }
-      #slime{
-        transform: rotate(345deg)
-      } 
+    body {
+      margin: 0;
+      background-color: #f0ebf8;
+    }
+
+    #foot {
+      transform: rotate(25deg)
+    }
+
+    #slime {
+      transform: rotate(345deg)
+    }
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
+  <div id="music"></div>
   <h1>Order form</h1>
   <script>
-        function play(){
-        document.body.innerHTML= "<audio autoplay><source url=" + lol + ' type="audio/mp3"></audio>;
-      }
-      play();
+    function play() {
+      song = lol();
+      console.log(song);
+      document.getElementById("music").innerHTML = '<audio autoplay><source src="' + song + '" type="audio/mp3"></audio>';
+    }
+    play();
   </script>
 </body>
+
 </html>

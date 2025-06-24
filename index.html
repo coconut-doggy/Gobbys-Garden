@@ -17,7 +17,17 @@
   </head>
   <body>
     <h1>Order form</h1>
-    <audio  autoplay loop name="media"> <source src=https://github.com/coconut-doggy/Gobbys-Garden/blob/743899c270f13ecb12b9b69203379530e505b192/Classic%20Easter-%20Axs%20Music.m4a" type="audio/mpeg">
-     <audio
+    <script> 
+      function getRandomInt(max) {
+            return math.floor(math.random() * max);
+      }
+      function lol(){
+        i=getRandomInt(4);
+        songs=["AntonioVivaldi_Spring.mp3", "05 Edvard Grieg - Peer Gynt, Morning Mood, 1875.mp3", "Classic Easter- Axs Music.m4a",
+      function play(){
+        document.body.innerHTML= "<audio autoplay><source src=" + lol + ' type="audio/mp3"></audio>;
+      }
+      play();
+    </script>
   </body>
 </html>

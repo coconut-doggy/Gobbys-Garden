@@ -1,17 +1,10 @@
-function getRandomInt(max) {
-  return Math.floor(Math.random() * max);
-}
-function lol() {
+function play_song() {
   //const songs = ["https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/AntonioVivaldi_Spring.mp3", "https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/05%20Edvard%20Grieg%20-%20Peer%20Gynt%2C%20Morning%20Mood%2C%201875.mp3", "https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/Classic%20Easter-%20Axs%20Music%20(2).mp3", "https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/05.%20Franz%20Joseph%20Haydn%20-%20Trumpet%20Concerto.mp3"];
   const songs = ["AntonioVivaldi_Spring.mp3", "05%20Edvard%20Grieg%20-%20Peer%20Gynt%2C%20Morning%20Mood%2C%201875.mp3", "Classic%20Easter-%20Axs%20Music%20(2).mp3", "05.%20Franz%20Joseph%20Haydn%20-%20Trumpet%20Concerto.mp3"];
-  return (songs[getRandomInt(songs.length)]);
-}
-
-function play_song() {
-  const songs = ["https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/AntonioVivaldi_Spring.mp3", "https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/05%20Edvard%20Grieg%20-%20Peer%20Gynt%2C%20Morning%20Mood%2C%201875.mp3", "https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/Classic%20Easter-%20Axs%20Music%20(2).mp3", "https://github.com/coconut-doggy/Gobbys-Garden/blob/5705a65ec00321b0691bca8c116bafbbc31fc7bc/05.%20Franz%20Joseph%20Haydn%20-%20Trumpet%20Concerto.mp3"];
   const i = Math.floor(Math.random() * songs.length);
   const song_url = songs[i];
   console.log("Playing song: " + song_url);
+  // If a song is already playing, stop it
   const audio = new Audio(song_url);
   //const audio = new Audio("https://raw.githubusercontent.com/coconut-doggy/Gobbys-Garden/5705a65ec00321b0691bca8c116bafbbc31fc7bc/AntonioVivaldi_Spring.mp3");
   audio.play();

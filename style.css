@@ -50,14 +50,14 @@
 #div2 {
   /* animation properties */
   animation-name: my-ani2mation;
-  animation-duration: 2s;
+  animation-duration: 10s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   
   /* other properties */
-  width: 300px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 10px;
   position: absolute;
   left: 0; 
@@ -69,11 +69,13 @@
 
 @keyframes my-ani2mation {
   from {
-  width: 500px;
+  width: 83px;
     top: 83px;
+    transform: rotate3d(100, 0, 00, 360deg);
   }
   to {
-    width: 50px;
-    top: 500px;
+    width: 83px;
+    top: 83px;
+    transform: 
   }
 }

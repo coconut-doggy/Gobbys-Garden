@@ -1,0 +1,79 @@
+  body {
+      margin: 0;
+      background-color: #f0ebf8;
+    }
+
+    #foot {
+      transform: rotate(25deg)
+    }
+
+    #slime {
+      transform: rotate(345deg)
+    }
+    #foot, #slime {
+      position: inline-block;
+      width: 100px;
+      height: 100px;
+    }
+    #div1 {
+  /* animation properties */
+  animation-name: my-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  /* other properties */
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto;
+  margin-right: auto; 
+
+}
+
+@keyframes my-animation {
+  from {
+   background: #ff0000;
+    width: 300px;
+    top: 10px;
+  }
+  to {
+    background-color: #ffff00;
+    width: 50px;
+    top: 100px;
+  }
+}
+#div2 {
+  /* animation properties */
+  animation-name: my-ani2mation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  /* other properties */
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto;
+  margin-right: auto; 
+
+}
+
+@keyframes my-ani2mation {
+  from {
+  width: 500px;
+    top: 83px;
+  }
+  to {
+    width: 50px;
+    top: 500px;
+  }
+}

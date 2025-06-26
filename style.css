@@ -1,6 +1,6 @@
   body {
       margin: 0;
-      background-color: #f0ebf8;
+      background-color: #ffffff;
     }
 
     #foot {
@@ -15,38 +15,6 @@
       width: 100px;
       height: 100px;
     }
-    #div1 {
-  /* animation properties */
-  animation-name: my-animation;
-  animation-duration: 2s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  
-  /* other properties */
-  width: 300px;
-  height: 100px;
-  border-radius: 10px;
-  position: absolute;
-  left: 0; 
-  right: 0; 
-  margin-left: auto;
-  margin-right: auto; 
-
-}
-
-@keyframes my-animation {
-  from {
-   background: #ff0000;
-    width: 300px;
-    top: 10px;
-  }
-  to {
-    background-color: #ffff00;
-    width: 50px;
-    top: 100px;
-  }
-}
 #div2 {
   /* animation properties */
   animation-name: my-ani2mation;
@@ -76,6 +44,48 @@
   to {
     width: 83px;
     top: 83px;
-    transform: 
+    transform: rotate3d(100, 0, 00, 0deg);
+  }
+}
+#div1 {
+  /* animation properties */
+  animation-name: my-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  /* other properties */
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto;
+  margin-right: auto; 
+
+}
+
+@keyframes my-animation {
+  from {
+  width: 83px;
+    top: 83px;
+     transform: rotate3d(100, 50, 060, 264deg);
+     margin: 0;
+  }
+  to {
+    from {
+  width: 83px;
+    top: 83px;
+     transform: rotate3d(000, 00, 000, 1500deg);
+     margin: 0;
+  }
+    to {
+      width: 83px;
+      top: 83px;
+      transform: rotate3d(121, 056, 300, 150deg);
+      margin: 0;
+  }
   }
 }

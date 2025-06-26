@@ -1,0 +1,11 @@
+<div id="delayedContent" style="display: none;">
+p><img src="sugar sticker.png" alt="Gobby's Garden" width="200" height="200"> <br /> Click this for my channel</p>  
+  <script>
+    // Function to show content after 50 seconds
+    function showContent() {
+      document.getElementById('delayedContent').style.display = 'block';
+    }
+
+    // Set a timeout to call the function after 50 seconds (50000 milliseconds)
+    setTimeout(showContent, 5000);
+  </script>

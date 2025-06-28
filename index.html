@@ -15,7 +15,19 @@
 <button onclick="play_a_song();">play music</button>
   <h1>Order form</h1>
   <img src="Screenshot_2025-06-24_154539-removebg-preview.png" id="slime" alt="Stamp of approval"> <br />
-  <img src="sugar sticker.png" id="foot" alt="produce sticker"><br />
   <a href="https://forms.gle/E7DUzXBpA6yw52mU9"><img src="CandyBlossomPic.webp" alt="Candy Blossom" width="200" height="200"></a>
   <p>click the CandyBlossom to order your crops</p>
+  <div id="delayedContent" style="display: none;">
+    <a href="https://docs.google.com/spreadsheets/d/1TrJvqoB5YKSbQGMy9Na9FibUKht2i0FfVAUmbe-tNnM/edit?usp=sharing">Click for vip pass calculator</a>
+  </div>
+  <script>
+    // Function to show content after 5 seconds
+    function showContent() {
+      document.getElementById('delayedContent').style.display = 'block';
+    }
+
+    // Set a timeout to call the function after 5 seconds (5000 milliseconds)
+    setTimeout(showContent, 5000);
+  </script>
+</body>
 </html>

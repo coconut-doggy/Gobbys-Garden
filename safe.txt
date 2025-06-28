@@ -3,7 +3,7 @@ p><img src="sugar sticker.png" alt="Gobby's Garden" width="200" height="200"> <b
   <script>
     // Function to show content after 50 seconds
     function showContent() {
-      document.getElementById('delayedContent').style.display = 'block';
+      document.getElementById('<a href="https://docs.google.com/spreadsheets/d/1TrJvqoB5YKSbQGMy9Na9FibUKht2i0FfVAUmbe-tNnM/edit?usp=sharing">Click for vip pass calculator</href>').style.display = 'block';
     }
 
     // Set a timeout to call the function after 50 seconds (50000 milliseconds)

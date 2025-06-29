@@ -1,0 +1,15 @@
+Body{
+    background-color: #000;
+}
+#text{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 6.5em;
+    text-align:justify;
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+}
+img{
+  position: absolute; bottom: 0;
+  position: absolute; left: calc(50% - 240px);
+  width: 480px;
+}

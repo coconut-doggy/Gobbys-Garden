@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>???</title>
+  <link rel="stylesheet" href="Cursed.css">
+</head>
+<body>
+ <div id="text">YOU ARE NOT WELCOME HERE</div>
+  
+  <script>
+    const textElement = document.getElementById('text');
+    const text = textElement.textContent;
+    let index =  1;
+
+    function changeLetters() {
+      const letters = text.split('');
+      letters[index] = letters[index] === letters[index].toUpperCase()
+        ? letters[index].toLowerCase()
+        : letters[index].toUpperCase();
+      textElement.textContent = letters.join('');
+      index = (index + 2) % letters.length;
+    }
+
+    setInterval(changeLetters, 25); // Change every 200ms
+  </script>
+  <img src="Jeff.webp">
+  </body>
+</html>

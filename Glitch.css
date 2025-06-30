@@ -1,0 +1,34 @@
+body{
+    background-color: black; /* Background color is black */
+    margin: 0; /* No margin */
+}
+#flicker1{
+    animation: flicker1 1s infinite;
+    animation-timing-function: linear;
+}
+@keyframes flicker1 {
+    0% { opacity: 1; }
+    25% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 1; }
+    87.5% { opacity: 0; }
+    100% { opacity: 1; }
+}
+#flicker2{
+    animation: flicker2 1s infinite;
+    animation-timing-function: linear;
+}
+@keyframes flicker2 {
+    0% { opacity: 0; }
+    25% { opacity: 0; }
+    50% { opacity: 1; }
+    75% { opacity: 0; }
+    87.5% { opacity: 1; }
+    100% { opacity: 1; 
+    
+    }
+}
+div{font-size: 10vw; /* Font size is 5% of viewport width */
+    color: red; /* Text color is red */
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black; /* Text shadow is black */
+}
